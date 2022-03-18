@@ -1,0 +1,217 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: block;
+    width: 100vw;
+    height: 100vw;
+}
+
+header {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.pseudo {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.pseudo a {
+    color: #384948;
+    margin-left: 10px;
+}
+
+
+/*Links no visitados*/
+
+.pseudo a:link {
+    color: #384948;
+}
+
+
+/*Links visitados*/
+
+.pseudo a:visited {
+    color: #47900b;
+}
+
+
+/*Link Mouse Over*/
+
+.pseudo a:hover {
+    color: #dcf11c;
+}
+
+
+/* Link Seleccionado*/
+
+.pseudo a:active {
+    color: #be0707;
+}
+
+.back {
+    display: block;
+    width: 200px;
+    height: 100px;
+    background-color: #be0707;
+    cursor: pointer;
+    margin-left: 300px;
+    background-image: url(../img/logoCei.png);
+    background-size: cover
+}
+
+.back:hover {
+    background-color: #dcf11c;
+    background-image: url(../img/logo-CEIB.png);
+    background-size: cover
+}
+
+.back p {
+    display: none;
+    color: #fff;
+    text-align: center;
+}
+
+.back:hover>p {
+    display: block;
+}
+
+.textos p {
+    color: #1f0b46;
+}
+
+
+/* first-child*/
+
+.textos p:first-child {
+    color: #47900b;
+}
+
+
+/* last-child*/
+
+.textos p:last-child {
+    color: #be0707;
+}
+
+
+/* nth-child(n)*/
+
+.textos p:nth-child(4) {
+    background-color: #dcf11c;
+    color: #fff;
+}
+
+
+/*Target*/
+
+:target {
+    background-color: #47900b;
+    border: 2px dotted #000;
+}
+
+
+/* ul li #yellow:target {
+    background-color: #d2e435;
+    border: 2px dotted #000;
+} */
+
+#parrafos {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+
+/* Estilos para el Pseudoelementos*/
+
+#parrafos p {
+    width: 600px;
+}
+
+
+/* first-line*/
+
+#parrafos #parr1::first-line {
+    color: #be0707;
+    font-size: 20px;
+}
+
+
+/* first-letter*/
+
+#parrafos #parr2::first-letter {
+    color: #dcf11c;
+    font-size: xx-large;
+}
+
+
+/*Multiple PseudoElemento*/
+
+#parrafos #parr3::first-line {
+    color: #4d0136;
+    font-size: 20px;
+}
+
+#parrafos #parr3::first-letter {
+    color: #117283;
+    font-size: xx-large;
+}
+
+
+/* ::selection */
+
+::selection {
+    background-color: #47900b;
+    color: #4d0136;
+}
+
+#afterBefore {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+
+/* ::after */
+
+#afterBefore #after1::after {
+    content: "\027af";
+}
+
+
+/* ::before */
+
+#afterBefore #before::before {
+    content: "\027b9";
+}
+
+ /* 
+ 
+    PREFIJOS
+    -moz- FIREFOX
+    -ms- IE
+    -webkit- CHROME SAFARI
+    -O- OPERA */
+
+#btn1 {
+    display: block;
+    width: 200px;
+    height: 100px;
+    background-color: #be0707;
+    cursor: pointer;
+    margin-left: 300px;
+    margin-top: 20px;
+    border-radius: 10px 20px 50px 45px;
+    -webkit-border-radius: 10px 20px 50px 45px;
+    -webkit-box-shadow: 12px 1px 2px 1px #2B87FF;
+    box-shadow: 12px 1px 2px 1px #2B87FF;
+}

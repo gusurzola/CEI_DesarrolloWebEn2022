@@ -1,0 +1,125 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+article{
+    display: flex;
+    flex-flow: column wrap;
+    
+}
+
+.arrow{
+    display: block;
+    width: 300px;
+    height: 300px;
+    background-color: #09881a;
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+ /*    transition-property:all;
+    transition-duration: 3s;
+    transition-delay: 1s;
+    transition-timing-function: ease-out; */
+    transition: all 3s 2s ease-in;
+}
+
+.arrow:hover{
+    background-color: blue;
+    width: 500px;
+}
+
+.ball{
+    display: block;
+    width: 250px;
+    height: 200px;
+    background-color: rgb(245, 39, 39);
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+    transition-property: background-color , transform;
+    transition-duration: 4s;
+    transition-delay: 1s;
+    transition-timing-function: cubic-bezier(.23,1.01,.83,.11);
+}
+.ball:hover{
+    background-color: #305555;
+   /*  transform: translateX(900px); */
+   transform: translateZ(900px);
+   transform: scale(0.2);
+}
+
+/*Animaciones*/
+
+.ballon{
+    display: block;
+    width: 100px;
+    height: 100px;
+    clip-path: circle(50% at 50% 50%);
+    background-color: #032e2e;
+    animation-name: moveBallon;
+    animation-direction: normal;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+/*Función para animar*/
+
+@keyframes moveBallon{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(600px) translateY(400px) scale(2);
+    }
+}
+
+.aniCartman article div img{
+    width: 200px;
+}
+
+.cartman{
+    animation-name: moveCartman;
+    animation-direction: normal;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveCartman{
+
+    0%{
+        transform: translateX(0);
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-100px);
+        transform: translateX(-300px);
+        transform: translateZ(400px);
+    }
+    40%{
+        transform: translateY( 300px);
+        transform: translateX( 300px);
+    }
+    60%{
+        transform: translateY( 600px);
+        transform: translateX( 300px);
+    }
+    80%{
+        transform: translateY( 100px);
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(600px) translateY(400px)
+    }
+}

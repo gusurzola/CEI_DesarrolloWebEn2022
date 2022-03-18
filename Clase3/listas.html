@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas en HTML</title>
+</head>
+<body>
+    <h1>Listas en HTML</h1>
+    <h3>Listas Ordendas</h3> 
+    <!-- listas ordenadas son <ol></ol> -->
+    <!-- Los hijos de las listas <li></li> -->
+     <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+    </ol>
+    <h3>Listas Desordenadas</h3> 
+    <!-- listas desordenadas <ul></ul> -->
+   <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    
+    <h4>Cambiar el type de la lista</h4> 
+    <!-- Atributos cambiar el ol y el ul  -->
+    <!-- Para <OL></OL> type= A a I i 1 -->
+  <ol type="I">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol> 
+    <!-- Para <UL></UL> type= square circle disc -->
+   <ul type="square">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul> 
+    <h3>Listas compuestas</h3>
+    <ul>
+        <li>Item 1
+            <ol>
+                <li>Sub Item1</li>
+                <li>Sub Item2</li>
+                <li>Sub Item3
+                    <ul>
+                        <li>Sub sub Item 3</li>
+                        <li>Sub sub Item 2</li>
+                    </ul>
+
+                </li>
+            </ol>
+        </li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <ul>
+        <li>Coches
+            <ol type="i">
+                <li>BMW</li>
+                <li>RENAULT</li>
+                <li>JEEP
+                    <ul type="square">
+                        <li>WRANGLER</li>
+                        <li>COMPASS
+                            <ol type="a">
+                                <li>HIBRIDA</li>
+                                <li>ELÉCTRICA</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+        <li>Motos
+            <ol type="A">
+                <li>KAWASAKI</li>
+                <li>HONDA</li>
+            </ol>
+
+        </li>
+    </ul>
+
+    <h3>Listas con links</h3>
+    <ul>
+        <li><a href="https://es-es.facebook.com/" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/?hl=es" target="_blank">Instagram</a></li> <!-- esto si -->
+        <!--<a href=""><li></li></a>  esto no -->
+    </ul>
+
+    <!-- Una lista ordenada de 4 imagenes width = "150" + palabra y solo la img lleva al links con url externa -->
+    <ol>
+        <li><a href="https://es-es.facebook.com/" target="_blank"><img src="img/facebook.png" alt="facebook" width="150"></a>Facebook</li>
+        <li><a href="https://www.instagram.com/?hl=es" target="_blank"><img src="img/instagram.png" alt="instagram" width="150"></a>Instagram</li>
+        <li><a href="https://es.linkedin.com/" target="_blank"><img src="img/linkedin.png" alt="linkedin" width="150">Linkedin</a></li>
+        <li><a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twitter.png" alt="twitter" width="150"></a>Twitter</li>
+    </ol>
+
+</body>
+</html>

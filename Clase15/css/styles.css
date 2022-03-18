@@ -1,0 +1,79 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: block;
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+nav ul li{
+    display: block;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.face{
+    
+    background-image: url(../img/redessociales.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.face:hover{
+    background-position: 0 -110px;
+    
+}
+
+.insta{
+    background-image: url(../img/redessociales.png);
+    background-repeat: no-repeat;
+    background-position: -315px 0;
+}
+
+.insta:hover{
+    background-position: -315px -110px;  
+}
+.twitter{
+    background-image: url(../img/redessociales.png);
+    background-repeat: no-repeat;
+    background-position: -105px 0;
+}
+.twitter:hover{
+    background-position: -105px -110px;
+}
+.youtube{
+    background-image: url(../img/redessociales.png);
+    background-repeat: no-repeat;
+    background-position: -210px 0;
+}
+
+.youtube:hover{
+    background-position: -210px -110px;
+}
+article{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.myIcon{
+    color: blueviolet;
+    font-size: 50px;
+}
+
+article div img{
+    width: 100px;
+}
+

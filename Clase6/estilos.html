@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos en HTML</title>
+    <style>
+        /*Tipo 2 Como propiedad del html*/
+        h3{
+            color: red;
+        }
+        h4{
+            color: rgb(228, 190, 65) ;
+        }
+    </style>
+    <!-- Tipo 3 Vinculando la hoja de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Tipo 1: Estilos dentro de la etiqueta -->
+    <p style="color: blue;font-size: 20px;font-family: Verdana, Geneva, Tahoma, sans-serif;text-align: center;font-style: italic;">
+        Hola tengo estilo
+    </p>
+    <h2 style="text-decoration: line-through;font-weight: 300;">Hola soy un titulo con Estilo</h2>
+    <h3>Hola el h3</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, aliquam?</p>
+    <p id="parrafoA">
+        Parrafo con estilo por identificador
+    </p>
+    <h2 class="titulos">Titulo con Clase</h2>
+    <h5 class="titulos">Otro titulo con clase</h5>
+   <p class="titulos">Parrafo titulo con clase</p>
+   <p id="parrafoB" class="titulos">Parrafo con id y class</p>
+
+   <h4 style="color: red;">Titulo con id class etiqueta</h4>
+   <h6>Estilos pa todos</h6>
+
+
+</body>
+</html>

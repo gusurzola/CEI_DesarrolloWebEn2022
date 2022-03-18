@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Estilos del main*/
+
+.grid-container{
+    display: grid;
+    /* grid-template-columns: auto auto auto auto; */
+  /*   grid-template-columns: repeat(4,1fr);*/
+   
+  /*   grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); */
+
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+     grid-template-rows: 25vh 25vh 25vh;
+    /* grid-gap: 5px; 
+    gap: 5px;   */
+
+}
+
+/*Clase cajas*/
+
+.grid-item{
+    display: block;
+    border: 1px solid #000;
+    text-align: center;
+    background-color: #ccc;  
+}
+
+.contA{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: blue;
+}
+
+
+.contB{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: red;
+}
+
+.contC{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: orange;
+}
+
+.contD{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: purple;
+}
+.contF{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: green;
+}
+
+/*Estilos grid responsive*/
+
+
+.grid-auto{
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+}
+.grid-auto li{
+    display: block;
+    background-color: #064600;
+    color: #fff;
+    text-align: center;
+    height: 300px;
+}
+
+.grid-auto .intA{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: blue;
+}

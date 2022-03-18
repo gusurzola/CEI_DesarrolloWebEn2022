@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<body>
+    <h1>Tablas en HTML</h1>
+    <h4>Tabla de 5 filas X 3 Columnas</h4>
+    <table border="1" width="500" height="200">
+        <thead>
+            <tr><th>Tabla 1</th>
+            <th>Tabla 2</th>
+            <th>Tabla 3</th></tr>
+        </thead>
+        <tbody> <!-- cuerpo de la tabla -->
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td>Dato 3</td>
+            </tr>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td>Dato 3</td>
+                
+            </tr>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td>Dato 3</td>
+            </tr>
+            <tr>
+                <th>Dato 2</th>
+                <th>Dato 3</th>
+                <td>Dato 3</td>
+            </tr>
+        </tbody>
+    </table>
+    <h4>Tabla de 3 filas X 5 Columnas Titulos a la Izquierda</h4>
+    <table border="1" width="500" height="200">
+        <tbody>
+            <tr>
+                <th>Tabla 1</th>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td>Dato 3</td>
+                <td>Dato 4</td>
+            </tr>
+            <tr>
+                <th>Tabla 2</th>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td>Dato 3</td>
+                <td>Dato 4</td>
+            </tr>
+            <tr>
+                <th>Tabla 3</th>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td>Dato 3</td>
+                <td>Dato 4</td>
+            </tr>
+        </tbody>
+    </table>
+    <h4>Tabla de 3 filas X 5 Columnas Titulos a la Derecha</h4>
+    <table border="1" width="500" height="200">
+        <tbody>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td>Dato 3</td>
+                <td>Dato 4</td>
+                <th>Tabla 1</th>
+            </tr>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td>Dato 3</td>
+                <td>Dato 4</td>
+                <th>Tabla 2</th>
+            </tr>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td>Dato 3</td>
+                <td>Dato 4</td>
+                <th>Tabla 3</th>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Atributos para combinar columas colspan="numerodecolumnas" -->
+    <h4>Tabla con ColSpan</h4>
+    <table border="1" width="500" height="200">
+        <thead>
+            <tr>
+                <th colspan="4">Tabla de Estudiantes</th>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Curso</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nombre 1</td>
+                <td>Apellido 1</td>
+                <td>Edad 1</td>
+                <td>Curso 1</td>
+            </tr>
+            <tr>
+                <td>Nombre 2</td>
+                <td>Apellido 2</td>
+                <td>Edad 2</td>
+                <td>Curso 2</td>
+            </tr>
+            <tr>
+                <td>Nombre 3</td>
+                <td>Apellido 3</td>
+                <td>Edad 3</td>
+                <td>Curso 3</td>
+            </tr>
+        </tbody>
+    </table>
+     <!-- Atributos para combinar filas rowspan="numero de filas" -->
+     <h4>Tabla con rowspan</h4>
+     <table border="1" width="500" height="200">
+         <tbody>
+            <tr>
+                <th rowspan="3">Lista de Datos</th>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td>Dato 3</td>
+                <td>Dato 4</td>
+            </tr>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td>Dato 3</td>
+                <td>Dato 4</td>
+            </tr>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td>Dato 3</td>
+                <td>Dato 4</td>
+            </tr>
+         </tbody>
+     </table>
+     <table>
+         <tr>
+            <th>A</th>
+            <th>B</th>
+        </tr>
+         <tr><th>C</th></tr>
+         <tr>
+             <th>D</th>
+             <th>E</th>
+         </tr>
+         <tr>
+            <td>F</td>
+            <td>G</td>
+            <td>H</td>
+            <th>I</th>
+         </tr>
+         <tr>
+            <th>J</th>
+            <th>K</th>
+        </tr>
+     </table>
+</body>
+</html>

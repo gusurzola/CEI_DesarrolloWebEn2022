@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+
+/*Estilo body*/
+body{
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+}
+
+/*Estilo para el Main*/
+main{
+    display: block;
+    width: 1024px;
+    height: 2000px;
+    margin: 0 auto;
+}
+
+/*Estilo Header*/
+header{
+    display: block;
+    width: 1024px;
+    height: 300px;
+    position: relative;
+    top: 10px;
+    left: 300px;
+}
+
+/*Estilo Logo Img*/
+#logo img{
+    display: block;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: 0px;
+    left: 200px;
+    z-index: 2;
+    margin-left: 100px;
+}
+
+/*Id para la imagen del banner*/
+#banner img{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    z-index: 1;
+}
+
+/*Estilos Menu*/
+nav{
+    display: block;
+    width: 1024px;
+    height: 150px;
+    background-color: black;
+    position: sticky;
+    top: 300px;
+    left: 15%;
+    z-index: 4;
+    background-image: url(../img/backgroundMenu.jpg);
+    background-size: 1000px 100px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    font-family: 'Rowdies', cursive;
+}
+/*Estilo de la lista*/
+nav #menu{
+    display: block;
+    width: 1024px;
+    height: 150px;
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+
+/*Estilo de los botones*/
+nav #menu li{
+    display: block;
+    width: 160px;
+    height: 80px;
+    text-align: center;
+    float: left;
+    margin-left: 10px;
+}
+
+/*Estilo al contenido del boton*/
+nav #menu li a{
+    display: block;
+    width: 160px;
+    height: 50px;
+    color: #363636;
+    text-decoration: none;
+    background-color: #fff;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+
+/*Estilo para el hover del boton*/
+nav #menu li a:hover{
+    color: #fff;
+    background-color: #363636;
+    font-size: 18px;
+}
+
+/*Estilos al SubMenu*/
+nav #menu li #subMenu{
+    display: none;
+    width: 160px;
+    height: 230px;
+    position: relative;
+    top: 0px;
+    left: -50px;
+}
+
+nav #menu li #subMenu li a{
+    display: block;
+    width: 160px;
+    height: 40px;
+    background-color: #363636;
+    color: #fff;
+    position: relative;
+    top: 10px;
+}
+
+nav #menu li #subMenu li a:hover{
+   
+    background-color:  #fff;;
+    color:#363636
+}
+
+nav #menu li:hover > #subMenu{
+    display: block;
+}

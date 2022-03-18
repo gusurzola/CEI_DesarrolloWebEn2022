@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;     
+    grid-template-areas: 'banner banner banner banner banner' 
+                         'menuNav menuNav menuNav menuNav menuNav'
+                         'seccion  seccion seccion seccion  seccion'
+                         'seccion  seccion seccion seccion  seccion'
+                         'piePagina piePagina piePagina piePagina piePagina';
+   color: #fff;
+   
+}
+
+header{
+    display: grid;
+    height: 200px;
+    background-color: #FF0505;
+    grid-area: banner;
+   
+}
+
+/*Alinear elementos en grid usamos 
+ align-self - justify-self */
+.logo{
+   align-self: center;
+   justify-self: end;
+}
+.logo img{
+    width: 100px;
+    height: 100px; 
+}
+
+nav{
+    display: block;
+    height: 97px;
+    background-color: #241B8F;
+    grid-area: menuNav;
+}
+
+section{
+    display: grid;
+   /*  grid-template-columns: repeat(5,auto); */
+   grid-template-columns: 1fr 2fr 1fr 2fr 1fr;  
+   grid-template-rows: auto;
+    height: 704px;
+    background-color: #C4C4C4;
+    grid-area: seccion;
+   
+   
+}
+article{
+    display: block;
+    height: 560px;
+    width: 700px;
+    background-color: #19A469;
+    grid-area: 2/2/4/3
+}
+aside{
+    display: block;
+    height: 560px;
+    background-color: #198A2B;
+    width: 700px;
+    grid-area: 2/4/4/6
+    
+}
+
+footer{
+    display: block;
+    height: 105px;
+    background-color: #82206C;
+    grid-area: piePagina;
+}

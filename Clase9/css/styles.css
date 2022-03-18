@@ -1,0 +1,17 @@
+/* @font-face {
+    font-family: GusFont;
+    src: url(fonts/fuente.wff);
+} */
+@font-face {
+    font-family: 'fuenteGus';
+    src: url('../fonts/quintessential-regular-webfont.woff2') format('woff2'),
+         url('../fonts/quintessential-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*Estilo para el titulo*/
+h1{
+    font-family: 'fuenteGus';
+}

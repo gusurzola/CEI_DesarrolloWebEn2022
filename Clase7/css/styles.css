@@ -1,0 +1,55 @@
+/*Estilos Cotenedor Principal*/
+#contenedor{
+    display: block;
+    width: 1280px;
+    height: 720px;
+    background-color: #1b1b1b;
+    margin: 0 auto;
+    padding-top: 10px;   
+}
+/*Clase items grandes pagina*/
+.items{
+    display: block;
+    width: 1182px; 
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;  
+    margin-top: 20px;
+}
+/*Estilos Banner*/
+#banner{
+    height: 127px;
+    background-color: #FF0505;
+}
+/*Estilos Menu*/
+#menu{
+    height: 70px;
+    background-color: #241B8F;
+}
+/*Estilos Seccion*/
+#seccion{
+    height: 374px;
+    background-color: #C4C4C4;
+}
+/*Clase elementos pagina*/
+.elements{
+    width: 493px; 
+    height: 322px;
+    margin-top: 30px;
+    margin-left: 60px;
+    float: left;
+    
+} 
+/*Estilos Contenido*/
+#contA{
+    background-color: #198A2B;
+}
+/*Estilos Banner*/
+#contB{
+    background-color: #19A469
+}
+/*Estilos Pie Página*/
+ #piepag{
+    height: 55px;
+    background-color: #82206C;
+} 

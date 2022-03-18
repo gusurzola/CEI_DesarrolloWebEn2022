@@ -1,0 +1,107 @@
+/*Setear las propiedades iniciales*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Estilos para caja centimetros*/
+#cent{
+    display: block;
+    width: 50cm;
+    height: 50cm;
+    color: #fff;
+    background-color: #ff00ff;
+}
+/*Estilos para caja centimetros*/
+#mili{
+    display: block;
+    width: 50mm;
+    height: 50mm;
+    color: #fff;
+    background-color: #25cdeb;
+}
+/*Estilos para caja centimetros*/
+#pixe{
+    display: block;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background-color: #cc3434;
+}
+/*Estilos para caja centimetros*/
+#inch{
+    display: block;
+    width: 50in;
+    height: 50in;
+    color: #fff;
+    background-color: #631f34;
+}
+/*Estilos para caja centimetros*/
+#punt{
+    display: block;
+    width: 50pt;
+    height: 50pt;
+    color: #fff;
+    background-color: #8caa20;
+}
+/*Estilos para caja centimetros*/
+#pic{
+    display: block;
+    width: 50pc;
+    height: 50pc;
+    color: #fff;
+    background-color: #2a9221;
+}
+/*Estilos de las medidas Relativas*/
+body{
+    color: #fff;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p{
+   
+    font-size: 8px;
+}
+h1{
+    font-size: 30px;
+}
+main{
+    display: block;
+    /* width: 80%;
+    height: 80%; */
+    width: 90vw;
+    height: 100%;
+   /*  height: 100vh; */
+    background-color: #021300;
+    margin: 0 auto;
+}
+
+header{
+    display: block;
+    width: 80%;
+    height: 200px;
+    background-color: hsl(71, 100%, 56%);
+    margin: 0 auto;
+}
+section{
+    display: block;
+    width: 80%;
+    height: 100%;
+    background-color: #17eb00;
+    margin: 0 auto;
+}
+
+article{
+    display: inline-block;
+    width: 40%; 
+    height: 400px;
+    background-color: #cc4008;
+}
+
+#arti1{
+    font-size: 2em;
+}
+#arti2{
+    font-size: 40px;
+}
